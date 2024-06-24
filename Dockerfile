@@ -5,7 +5,7 @@ FROM tomcat:9.0
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Copy the WAR file to the webapps directory
-COPY onlinebookstore.war /usr/local/tomcat/webapps/ROOT.war
+COPY shopping-cart-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose the port Tomcat is running on
 EXPOSE 8080
